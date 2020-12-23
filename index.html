@@ -9,50 +9,55 @@
     <title>Form Validation</title>
 </head>
 <body>
-<form id="registration-form">
-    <div class="bg-gray-400 h-screen flex justify-center items-center">
+    <form id="form">
 
-        <div class="bg-white rounded shadow-lg p-6 w-1/3" id="my-form">
-
-            <div class="my-4" id="my-username">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="your username"
-                       class="base-input block"
-                >
-                <div>
-                    <!-- whatever we want -->
+        <div class="bg-blue-900 h-screen flex justify-center items-center">
+    
+            <div class="bg-yellow-700 rounded shadow-lg p-12" id="my-form">
+    
+                <div class="my-8 flex justify-between" id="my-username">
+                    <label for="username" class="font-semibold pr-4">Username</label>
+                    <input type="text" id="username" name="username" class="base-input">
+                    <div>
+                        <!-- whatever we want -->
+                    </div>
+                    <!-- <small class="hidden">Success</small> -->
                 </div>
-<!--                <small class="hidden">Please enter your username</small>-->
+    
+                <div class="my-8 flex justify-between">
+    
+                    <label for="email" class="font-semibold">Email</label>
+                    <input type="text" id="email" name="email" class="base-input">
+                    <div>
+                        <!-- whatever we want -->
+                    </div>
+                    <!-- <small class="hidden">Please enter your email</small>
+                    <small class="hidden">Success</small> -->
+                </div>
+    
+                <div class="my-8 flex justify-between">
+                    <label for="password" class="font-semibold">Password</label>
+                    <input type="password" id="password" name="password" class="base-input">
+                    <div>
+                        <!-- whatever we want -->
+                    </div>
+                    <!-- <small class="hidden">Please enter a valid password</small>
+                    <small class="hidden">Success</small> -->
+                </div>
+    
+                <div class="my-8 flex justify-between">
+                    <label for="password-2" class="font-semibold">Confirm Password</label>
+                    <input type="password" id="password-2" name="password-2" class="base-input">
+                </div>
+    
+                <button class="bg-green-600 p-2 w-full hover:bg-green-300 rounded-full shadow-lg">Register Now</button>
+    
             </div>
-
-            <div class="my-4">
-
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="me@domain.com"
-                       class="base-input"
-                >
-                <small class="hidden">Please enter your email</small>
-                <small class="hidden">Success</small>
-            </div>
-
-            <div class="my-4">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" class="base-input">
-                <small class="hidden">Please enter a valid password</small>
-                <small class="hidden">Success</small>
-            </div>
-
-            <div class="my-4">
-                <label for="password-2">Confirm Password</label>
-                <input type="password" id="password-2" name="password-2" class="base-input">
-            </div>
-
-            <button class="bg-green-200 p-3 w-full">Register Now</button>
-
+    
         </div>
+    </form>
+    
 
-    </div>
-</form>
 
 
 <script src="app.js"></script>

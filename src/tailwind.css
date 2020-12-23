@@ -6,11 +6,11 @@
 }
 
 .success {
-    @apply bg-green-600 text-white p-2 block
+    @apply bg-green-800 text-white p-1 block
 }
 
 .error {
-    @apply block bg-red-500 text-white
+    @apply block bg-white text-red-800 p-1
 }
 
 @tailwind utilities;

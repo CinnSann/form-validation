@@ -1,13 +1,17 @@
 // 1. get DOM element
-const regForm = document.getElementById('registration-form')
+const form = document.querySelector('#form')
+const username = document.querySelector('#username')
+const email = document.querySelector('#email')
+const password = document.querySelector('#password')
 
-const username = document.getElementById('username')
-const email = document.getElementById('email')
 
-regForm.addEventListener('submit', function (e) {
+
+form.addEventListener('submit', function (e) {
   e.preventDefault()
 
   validateEmpty(username)
+  validateEmpty(email)
+  validateEmpty(password)
 
   //@TODO: add the validation for email (Code Challenge 5a)
   //@TODO: Code Challenge 5b: Refactor your CC 5a to use function with the "blueprints" below
@@ -17,32 +21,37 @@ regForm.addEventListener('submit', function (e) {
 })
 
 function validateEmpty(input) {
-  console.log(input)
   if (input.value === '') {
-      showError(input)
+    showError(input)
+    return true
   } else {
-      showSuccess(input)
+    showSuccess(input)
+    return false
   }
 }
 
-function showError(input){
-  // steps to do this...
-  console.log('input is empty')
+function showError(input) {
+  input.nextElementSibling.innerHTML = '<small class="error">Field is required!</small>'
 }
 
-function showSuccess () {
+function showSuccess (input) {
+  input.nextElementSibling.innerHTML = '<small class="success">Thank you!</small>'
     console.log('you are ready to submit')
 }
 
-function validatePassMatch(password1, password2){
-  //@TODO: check if the passwords match
-}
+// function validatePassMatch(password1, password2){
+//   //@TODO: check if the passwords match
+// }
 
-function validateIsEmail(email){
-  //@TODO: check if input is an email
-}
+// function validateIsEmail(email){
+//   //@TODO: check if input is an email
+// }
 
 
-function validateMinLength(input){
-  //@TODO: check length
-}
+// function validateMinLength(input){
+//   //@TODO: check length
+// }
+
+// function checkIfNameExists(){
+//  @TODO check username
+// }
