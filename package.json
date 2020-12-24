@@ -9,6 +9,6 @@
   },
   "scripts": {
     "dev" : "live-server .",
-    "build": "tailwindcss build ./src/tailwindcss -o .dist/tailwindcss"
+    "tw": "tailwindcss build ./src/tailwindcss -o .dist/tailwindcss"
   }
 }
