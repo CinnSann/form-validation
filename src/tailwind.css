@@ -2,27 +2,20 @@
 @tailwind components;
 
 .base-input {
-    @apply border-b-2 border-gray-300 outline-none focus:border-gray-600;
+    @apply border-2 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-600 rounded-md md:w-80;
 }
 
 .success-input {
-    @apply border-2 border-green-300 w-full;
+    @apply border-2 border-green-600 w-full;
 }
 
-#my-input {
-
-}
-
-.class-name{
-
-}
 
 .success {
-    @apply bg-green-800 text-white p-1 block
+    @apply font-semibold text-green-800 p-1;
 }
 
 .error {
-    @apply block bg-white text-red-800 p-1
+    @apply font-semibold text-red-800 p-1;
 }
 
 @tailwind utilities;

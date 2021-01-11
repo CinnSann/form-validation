@@ -13,10 +13,10 @@
 
         <div class="bg-blue-900 h-screen flex justify-center items-center">
     
-            <div class="bg-yellow-700 rounded shadow-lg p-12" id="my-form">
+            <div class="bg-white border-2 rounded shadow-lg p-12 md:w-3/12" id="my-form">
     
-                <div class="my-8 flex justify-between" id="my-username">
-                    <label for="username" class="font-semibold pr-4">Username</label>
+                <div class="md:my-8 justify-between" id="my-username">
+                    <label for="username" class="font-semibold flex">Username</label>
                     <input type="text" id="username" name="username" class="base-input">
                     <div>
                         <!-- whatever we want -->
@@ -24,9 +24,9 @@
                     <!-- <small class="hidden">Success</small> -->
                 </div>
     
-                <div class="my-8 flex justify-between">
+                <div class="my-8 justify-between">
     
-                    <label for="email" class="font-semibold">Email</label>
+                    <label for="email" class="font-semibold flex">Email</label>
                     <input type="text" id="email" name="email" class="base-input">
                     <div>
                         <!-- whatever we want -->
@@ -35,8 +35,8 @@
                     <small class="hidden">Success</small> -->
                 </div>
     
-                <div class="my-8 flex justify-between">
-                    <label for="password" class="font-semibold">Password</label>
+                <div class="my-8 justify-between">
+                    <label for="password" class="font-semibold flex">Password</label>
                     <input type="password" id="password" name="password" class="base-input">
                     <div>
                         <!-- whatever we want -->
@@ -45,12 +45,15 @@
                     <small class="hidden">Success</small> -->
                 </div>
     
-                <div class="my-8 flex justify-between">
-                    <label for="password-2" class="font-semibold">Confirm Password</label>
-                    <input type="password" id="password-2" name="password-2" class="base-input">
+                <div class="my-8 justify-between">
+                    <label for="password2" class="font-semibold flex">Confirm Password</label>
+                    <input type="password" id="password2" name="password2" class="base-input">
+                    <div>
+                        <!-- whatever we want -->
+                    </div>
                 </div>
     
-                <button class="bg-green-600 p-2 w-full hover:bg-green-300 rounded-full shadow-lg">Register Now</button>
+                <button class="bg-green-600 p-2 w-full hover:bg-green-300 focus:ring-0 focus:outline-none rounded-full shadow-lg">Register Now</button>
     
             </div>
     
